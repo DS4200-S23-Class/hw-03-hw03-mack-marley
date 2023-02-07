@@ -24,6 +24,7 @@
                         <li>Each state on the map is distinct from the others</li> 
                         <li>Key at the bottom for district system breakdown</li> 
                     </ul> 
+                </ul>
                 <h1>
                     Channels
                 </h1>
@@ -32,7 +33,7 @@
                     <li>Color</li>
                     <ul>
                         <li>
-                            Identity/Categorical-> represents the two election candidates
+                            Identity->Hue, Categorical-> represents the two election candidates
                         </li>
                         <li>
                             This is a good choice because the two candidates are represented by two distinct colors. 
@@ -41,7 +42,7 @@
                     <li>Shape</li>
                     <ul>
                         <li>
-                            Categorical: this is a good choice because each shape represents a state on the map and the goal is to show how each state's women voted. Additionally, the districts of Maine and Nebraska are shown on the bottom of the graphic as squares because they use a different system than the other states.
+                            Identity->Shape, Categorical: this is a good choice because each shape represents a state on the map and the goal is to show how each state's women voted. Additionally, the districts of Maine and Nebraska are shown on the bottom of the graphic as squares because they use a different system than the other states.
                         </li>
                     </ul>
                     <li>channel3</li>
@@ -63,17 +64,42 @@
                     Marks
                 </h1>
                 <ul>
-                    <li>Batted ball points</li>
-                    <li>Launch angle thresholds</li>
-                    <li>Exit velocities</li>
+                    <li>Points</li> 
+                    <ul> 
+                        <li>
+                            Each point on a graph represents a single batted ball.
+                        </li> 
+                    </ul>
+                    <li>Lines</li> 
+                    <ul> 
+                        <li>
+                            The line in the scoring value chart represents the average batted ball.
+                        </li> 
+                    </ul>
+                    <li>Areas</li> 
+                    <ul> 
+                        <li>
+                            The rectangles that make up the scoring value chart represent different groups of batted balls, ordinally by LWTS.
+                        </li> 
+                    </ul> 
                 </ul>
                 <h1>
                     Channels
                 </h1>
 
                 <ul>
-                    <li>channel1</li>
-                    <li>channel2</li>
+                    <li>Color</li>
+                    <ul>
+                        <li>
+                            Identity->Hue, Ordinal: this was a good choice because it shows where each batted ball lands on the spectrum of purple to orange, though it would be better conveyed with colors further from each other on the color wheel. 
+                        </li>
+                    </ul>
+                    <li>Position</li>
+                    <ul>
+                        <li>
+                            Magnitude->Position, Quantitative: this was a good choice because each batted ball datum can be charted based on XY values of exit velocity and launch angle. This is especially good in conjunction with the scoring value color, as it shows a pattern.  
+                        </li>
+                    </ul>
                     <li>channel3</li>
                 </ul>
                 <h1>
@@ -89,8 +115,6 @@
     <div class="flex-column"></div>
 
     <h2 class ="centered">Acknowledgements</h2>
-</body>
-
 
 
     <script src="main.js"></script>
