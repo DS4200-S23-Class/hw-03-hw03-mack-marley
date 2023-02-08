@@ -45,7 +45,6 @@
                             Identity->Shape, Categorical: this is a good choice because each shape represents a state on the map and the goal is to show how each state's women voted. Additionally, the districts of Maine and Nebraska are shown on the bottom of the graphic as squares because they use a different system than the other states.
                         </li>
                     </ul>
-                    <li>channel3</li>
                 </ul>
                 <h1>
                     Colormaps
@@ -103,11 +102,8 @@
                             Magnitude->Position, Quantitative: this was a good choice because each batted ball datum can be charted based on XY values of exit velocity and launch angle. This is especially good in conjunction with the scoring value color, as it shows a pattern.  
                         </li>
                     </ul>
-                    <li>channel3</li>
                 </ul>
-                <h1>
-                    Colormaps
-                </h1>
+                <h1>Colormaps</h1>
                 <ul>
                     <li>Ordered Attributes, divergent: </li>
                     <ul>
@@ -120,17 +116,48 @@
             </div>
         </div>
     <div class="flex-column"></div>
+    <div class="flex-row"> 
+        <img src="img/marriage1.png" alt="marriage vis">
+
+        <div>
+            <h1>Marks</h1>
+                <ul>
+                    <li>Areas</li> 
+                    <ul> 
+                        <li>
+                            Each area represents a US state with an individual marriage age
+                        </li> 
+                    </ul>                   
+                </ul>
+            <h1>Channels</h1>
+            <ul>
+                <li>Color</li>
+                    <ul>
+                        <li>
+                            Identity->Hue, Attribute: Ordinal->Quantitative/Sequential: this is a good choice because it shows a spectrum of varying marriage ages. Possibly a different color scheme could be more intuitive but the visualization clearly displays the meanings with a key. 
+                        </li>
+                    </ul>
+            </ul>
+            <h1>Colormaps</h1>
+            <ul>
+                <li>Ordered Attributes, divergent: </li>
+                <ul>
+                    <li>
+                        Colors represent two extremes (yellow is a high marriage age, purple is a low age) and the colors in between represent intermediate values
+                    </li>
+
+                </ul>
+            </ul>
+            </div>
+        </div>
 
     <h2 class ="centered">Acknowledgements</h2>
     <div>
         <ul>
-            <li>x</li>
-            <li>y</li>
-            <li>z</li>
+            <li> <a href="https://www.kaggle.com/datasets/thedevastator/median-age-at-first-marriage-in-america?resource=download">Caggle database for 3rd vis</a></li>
+            <li><a href="https://plotly.com/python/choropleth-maps/">Plotly choropleth documentation</a></li>
         </ul>
 
-
-    <script src="main.js"></script>
 </body>
 
 </html>
